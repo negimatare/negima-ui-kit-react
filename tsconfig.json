@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    "target": "ES2020",
+    "useDefineForClassFields": true,
+    "lib": [
+      "ES2020",
+      "DOM",
+      "DOM.Iterable"
+    ],
+    "module": "ESNext",
+    "skipLibCheck": true,
+    /* Bundler mode */
+    "moduleResolution": "bundler",
+    "allowImportingTsExtensions": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true,
+    "jsx": "react-jsx",
+    /* Linting */
+    "strict": true,
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+    "noFallthroughCasesInSwitch": true,
+
+    
+    // TODO: Better configuration
+    "paths": {
+      "@negima/react-components": [ "./src/common/components/index.ts" ],
+      "@negima/react-configs": [ "./src/lib/configs/index.ts" ],
+      "@negima/react-contexts": [ "./src/contexts/index.ts" ],
+      "@negima/react-guards": [ "./src/common/guards/index.ts" ],
+      "@negima/react-layouts": [ "./src/common/layouts/index.ts" ],
+      "@negima/react-providers": [ "./src/lib/providers/index.ts" ],
+      "@negima/react-redux": [ "./src/lib/redux/index.ts" ],
+      "@negima/react-services": [ "./src/lib/services/index.ts" ],
+      "@negima/react-templates": [ "./src/common/templates/index.ts" ],
+      "@negima/react-ui": [ "./src/common/ui/index.ts" ],
+      "@negima/react-utilities": [ "./src/lib/utils/index.ts" ]
+    }
+  },
+  "exclude": [ "node_modules" ],
+  "include": [ "src" ],
+  "references": [
+    { 
+      "path": "./tsconfig.node.json" 
+    }
+  ]
+}

@@ -1,0 +1,1 @@
+export { MsalOAuth2 } from './OAuth2';

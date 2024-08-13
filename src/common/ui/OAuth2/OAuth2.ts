@@ -1,0 +1,1 @@
+export * from './components/MsalOAuth2/MsalOAuth2';
