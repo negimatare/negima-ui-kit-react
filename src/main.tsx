@@ -6,6 +6,7 @@ import { PersistGate } from 'redux-persist/lib/integration/react';
 import { OAuth2Provider } from '@negima/react-contexts';
 import { reduxPersistor, reduxStore } from '@negima/react-redux';
 
+import './lib/locales/i18n.config';
 import './main.css';
 
 import App from './App.tsx'

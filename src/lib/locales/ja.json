@@ -1,0 +1,10 @@
+{
+    "oauth2": {
+        "heading": "Microsoft アカウントでサインインする",
+        "loading-button-label": "サインイン",
+        "loading-progress-label": "サインイン中です..."
+    },
+    "loading-screen": {
+        "now-loading-label": "読み込み中..."
+    }
+}

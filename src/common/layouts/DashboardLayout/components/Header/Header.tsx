@@ -1,6 +1,6 @@
 import * as React from 'react';
 import { Logo } from '@negima/react-components';
-import { AccountPopover, ThemeModeAction } from '@negima/react-ui';
+import { AccountPopover, LocalePopover, ThemeModeAction } from '@negima/react-components';
 
 import { useHeaderStyles } from './useHeaderStyles';
 
@@ -17,8 +17,8 @@ export const Header: React.FC = () => {
             <div className="t-flex-grow" />
 
             <div className={styles.actionBar}>
+                <LocalePopover />
                 <ThemeModeAction />
-
                 <AccountPopover />
             </div>
         </div>

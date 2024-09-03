@@ -20,7 +20,9 @@ export const AccountPopover: React.FC = () => {
     return (
         <Popover positioning="below-end">
             <PopoverTrigger disableButtonEnhancement>
-                <Avatar image={{ src: account?.photo }} name={account?.displayName} />
+                <div style={{ padding: 5 }}>
+                    <Avatar image={{ src: account?.photo }} name={account?.displayName} />
+                </div>
             </PopoverTrigger>
             <PopoverSurface tabIndex={-1} style={{ padding: 0 }}>
                 <AccountPopoverSurface />

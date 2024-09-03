@@ -1,1 +1,1 @@
-export { AccountPopover, ThemeModeAction } from './Header';
+export { AccountPopover, LocalePopover, ThemeModeAction } from './Header';

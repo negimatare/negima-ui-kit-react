@@ -1,7 +1,6 @@
 import { lazy } from 'react';
 import { Navigate, createBrowserRouter } from 'react-router-dom';
-import { GuestGuard, OAuth2Guard } from '@negima/react-guards';
-import { DashboardLayout } from '@negima/react-layouts';
+import { DashboardLayout, GuestGuard, OAuth2Guard } from '@negima/react-components';
 
 import { withSuspense } from './withSuspense';
 

@@ -1,0 +1,10 @@
+{
+    "oauth2": {
+        "heading": "Sign in with your Microsoft account",
+        "loading-button-label": "Sign-in",
+        "loading-progress-label": "Sign-in in progress..."
+    },
+    "loading-screen": {
+        "now-loading-label": "Now Loading..."
+    }
+}

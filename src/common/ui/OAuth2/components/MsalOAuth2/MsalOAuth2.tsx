@@ -1,4 +1,5 @@
 import * as React from 'react';
+import { useTranslation } from 'react-i18next';
 import { bundleIcon, PersonLockFilled, PersonLockRegular } from '@fluentui/react-icons';
 import { Button, Spinner, Title3 } from '@fluentui/react-components';
 import { useOAuth2Context } from '@negima/react-utilities';
@@ -14,11 +15,11 @@ export const MsalOAuth2: React.FC = () => {
         signIn
     } = useOAuth2Context();
 
+    const { t: transl } = useTranslation();
+
     return (
         <div className="t-flex t-flex-col t-gap-6 t-items-center">
-            <Title3>
-                Sign in with your Microsoft account
-            </Title3>
+            <Title3>{transl('oauth2.heading')}</Title3>
 
             {!inProgress
                 ?
@@ -28,12 +29,12 @@ export const MsalOAuth2: React.FC = () => {
                     size="large"
                     onClick={signIn}
                 >
-                    Sign in
+                    {transl('oauth2.loading-button-label')}
                 </Button>
                 :
                 <Spinner
                     appearance="primary"
-                    label="Access in progress..."
+                    label={transl('oauth2.loading-progress-label')}
                     labelPosition="below"
                     size="huge"
                 />

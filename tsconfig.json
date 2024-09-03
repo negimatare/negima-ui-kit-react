@@ -25,16 +25,12 @@
     
     // TODO: Better configuration
     "paths": {
-      "@negima/react-components": [ "./src/common/components/index.ts" ],
-      "@negima/react-configs": [ "./src/lib/configs/index.ts" ],
+      "@negima/react-components": [ "./src/common/index.ts" ],
       "@negima/react-contexts": [ "./src/contexts/index.ts" ],
-      "@negima/react-guards": [ "./src/common/guards/index.ts" ],
-      "@negima/react-layouts": [ "./src/common/layouts/index.ts" ],
+      "@negima/react-configs": [ "./src/lib/configs/index.ts" ],
       "@negima/react-providers": [ "./src/lib/providers/index.ts" ],
       "@negima/react-redux": [ "./src/lib/redux/index.ts" ],
       "@negima/react-services": [ "./src/lib/services/index.ts" ],
-      "@negima/react-templates": [ "./src/common/templates/index.ts" ],
-      "@negima/react-ui": [ "./src/common/ui/index.ts" ],
       "@negima/react-utilities": [ "./src/lib/utils/index.ts" ]
     }
   },

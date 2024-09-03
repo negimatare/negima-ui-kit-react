@@ -5,7 +5,7 @@ export const PKG_VERSION = import.meta.env.VITE_PKG_VERSION;
 // ** VFX
 export const VFX_SETTINGS = {
     // Generate palette from the following link: https://mycolor.space/
-    BACKDROP_FILTER: 'linear-gradient(to right top, #38438B, #944B94, #D75A88, #FF7E71, #FFB25F, #FFEB68)',
+    BACKDROP_FILTER: 'linear-gradient(to right top, #2F1E4F, #783063, #BA4D65, #E97B5D, #FFB758, #F9F871)',
     VARIANT: import.meta.env.VITE_VFX_VARIANT
 };
 

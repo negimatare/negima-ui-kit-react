@@ -14,12 +14,12 @@ export const Logo: React.FC<LogoProps> = ({
 }) => {
     const __assetName = React.useMemo(() => {
         switch (asType) {
-            case 'full': return 'logo-full.svg';
-            default: return 'logo.svg';
+            case 'full': return 'logo-full.webp';
+            default: return 'logo.webp';
         }
     }, [asType]);
 
-    const __asset = <img alt={APP_NAME} src={`/variants/${VFX_SETTINGS.VARIANT}/${__assetName}`} {...remains} />;
+    const __asset = <img alt={APP_NAME} src={`/variant/${VFX_SETTINGS.VARIANT}/${__assetName}`} {...remains} />;
 
     if (asLink) return <Link to={PATHS_MAIN.root}>{__asset}</Link>;
 
