@@ -30,7 +30,7 @@
     ],
     "screenshots": [
         {
-            "src": "variant/Negima-UI/negima-ui-kit.png",
+            "src": "themes/Negima-UI/negima-ui-kit.png",
             "sizes": "960x960",
             "type": "image/png",
             "form_factor": "wide",

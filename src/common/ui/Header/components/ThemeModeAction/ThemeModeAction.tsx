@@ -26,7 +26,7 @@ export const ThemeModeAction: React.FC = () => {
 
     const __state = React.useMemo<ThemeModeActionState>(
         () => ({
-            headline: isLightMode
+            heading: isLightMode
                 ? 'Switch to dark mode'
                 : 'Switch to light mode',
             icon: isLightMode ? <MoonIcon /> : <SunnIcon />
@@ -35,7 +35,7 @@ export const ThemeModeAction: React.FC = () => {
     );
 
     return (
-        <Tooltip content={__state.headline} relationship="label">
+        <Tooltip content={__state.heading} relationship="label">
             <Button appearance="transparent" icon={__state.icon} onClick={toggleMode} />
         </Tooltip>
     );

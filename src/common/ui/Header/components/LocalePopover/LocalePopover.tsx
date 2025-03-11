@@ -1,9 +1,9 @@
 import * as React from 'react';
 import { useTranslation } from 'react-i18next';
-import { bundleIcon, TranslateFilled, TranslateRegular } from '@fluentui/react-icons';
+import { bundleIcon, LocalLanguageFilled, LocalLanguageRegular } from '@fluentui/react-icons';
 import { Button, Popover, PopoverSurface, PopoverTrigger } from '@fluentui/react-components';
 
-const TranslateIcon = bundleIcon(TranslateFilled, TranslateRegular);
+const LocalLanguage = bundleIcon(LocalLanguageFilled, LocalLanguageRegular);
 
 /**
  * LocalePopover component.
@@ -14,10 +14,17 @@ export const LocalePopover: React.FC = () => {
     return (
         <Popover positioning="below-end">
             <PopoverTrigger disableButtonEnhancement>
-                <Button appearance="transparent" icon={<TranslateIcon />} />
+                <Button appearance="transparent" icon={<LocalLanguage />} />
             </PopoverTrigger>
             <PopoverSurface tabIndex={-1} style={{ padding: 0 }}>
-                <div className="t-flex t-flex-col t-gap-2">
+                <div className="tw:flex tw:flex-col tw:gap-2">
+                    <Button
+                        appearance="transparent"
+                        disabled={i18n.language === 'it'}
+                        onClick={() => i18n.changeLanguage('it')}
+                    >
+                        Italiano
+                    </Button>
                     <Button
                         appearance="transparent"
                         disabled={i18n.language === 'en'}

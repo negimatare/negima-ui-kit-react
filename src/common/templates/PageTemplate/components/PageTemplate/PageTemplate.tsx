@@ -1,35 +1,36 @@
 import * as React from 'react';
 import { Helmet } from 'react-helmet-async';
-import type { ForwardRefComponent } from '@fluentui/react-utilities';
 import { APP_NAME } from '@negima/react-configs';
+import { Breadcrumb, Header } from '@negima/react-components';
 
 import type { PageTemplateProps } from './PageTemplate.types';
 import { usePageTemplateStyles } from './usePageTemplateStyles';
-import { PageHeader } from '../PageHeader/PageHeader';
 
 /**
  * PageTemplate component.
  */
-export const PageTemplate: ForwardRefComponent<PageTemplateProps> = React.forwardRef(({
+export const PageTemplate = React.forwardRef<HTMLDivElement, PageTemplateProps>(({
+    heading,
+    items = [],
+    focusMode,
+    size,
     children,
-    headline,
-    icon = undefined,
-    caption = undefined
+    ...shards
 }, ref) => {
     const styles = usePageTemplateStyles();
 
     return (
         <React.Fragment>
             <Helmet>
-                <title>{`${headline} | ${APP_NAME}`}</title>
+                <title>{`${heading} | ${APP_NAME}`}</title>
             </Helmet>
 
             <div className={styles.root}>
-                <PageHeader headline={headline} caption={caption} icon={icon} />
+                <Header heading={heading} {...shards} />
+                
+                {!!items.length && <Breadcrumb items={items} focusMode={focusMode} size={size} />}
 
-                <div ref={ref} className={styles.body}>
-                    {children}
-                </div>
+                <div ref={ref} className={styles.body}>{children}</div>
             </div>
         </React.Fragment>
     );

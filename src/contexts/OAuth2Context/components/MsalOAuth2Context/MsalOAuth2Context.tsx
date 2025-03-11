@@ -66,7 +66,7 @@ export const MsalOAuth2Provider: React.FC<OAuth2ProviderProps> = ({
 
     const [state, dispatch] = React.useReducer(oauthReducer, defaultContextValue);
 
-    const acquireToken = (scopes: string[]) => {
+    const acquireToken = (scopes: string[] = MSAL_SETTINGS.SCOPES) => {
         const activeAccount = instance.getActiveAccount();
 
         if (!activeAccount) {

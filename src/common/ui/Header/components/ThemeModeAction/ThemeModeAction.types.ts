@@ -2,6 +2,6 @@
  * ThemeModeAction State
  */
 export type ThemeModeActionState = {
-    headline: string;
+    heading: string;
     icon: JSX.Element;
 };

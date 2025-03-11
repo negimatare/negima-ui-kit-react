@@ -1,51 +1,48 @@
+import { PATHS_MAIN } from '@negima/react-configs';
 import {
     bundleIcon,
-    BoardSplitFilled,
-    BoardSplitRegular,
+    BoardFilled,
+    BoardRegular,
+    LayerDiagonalFilled,
+    LayerDiagonalRegular,
+    LayerDiagonalAddFilled,
+    LayerDiagonalAddRegular,
     SettingsFilled,
-    SettingsRegular,
-    SparkleFilled,
-    SparkleRegular
+    SettingsRegular
 } from '@fluentui/react-icons';
-import { PATHS_MAIN } from '@negima/react-configs';
 
-const BoardSplitIcon = bundleIcon(BoardSplitFilled, BoardSplitRegular);
-const SettingIcon = bundleIcon(SettingsFilled, SettingsRegular);
-const SparkleIcon = bundleIcon(SparkleFilled, SparkleRegular);
+const BoardSplit = bundleIcon(BoardFilled, BoardRegular);
+const LayerDiagonal = bundleIcon(LayerDiagonalFilled, LayerDiagonalRegular);
+const LayerDiagonalAdd = bundleIcon(LayerDiagonalAddFilled, LayerDiagonalAddRegular);
+const Settings = bundleIcon(SettingsFilled, SettingsRegular);
 
 export const SIDEBAR_SETTINGS = {
     navigationItems: [
         {
             key: 'navigationItem__overview',
-            headline: 'Overview',
-            icon: <BoardSplitIcon />,
+            heading: 'homepage.navigation-item',
+            icon: <BoardSplit />,
             path: PATHS_MAIN.root
         },
-        // {
-        //     key: 'navigationItem__reactHookForm',
-        //     headline: 'React Hook Form',
-        //     icon: <IconForm />,
-        //     path: PATHS_MAIN.reactHookForm.root,
-        //     children: [
-        //         {
-        //             key: 'navigationItem__child__drawer',
-        //             headline: 'Drawer Form',
-        //             icon: <IconPanelRight />,
-        //             path: PATHS_MAIN.reactHookForm.drawer
-        //         }
-        //     ]
-        // },
         {
-            key: 'navigationItem__konamiCode',
-            headline: 'Konami Code',
-            icon: <SparkleIcon />,
-            path: PATHS_MAIN.konamiCode
-        }
+            key: 'navigationItem__campaigns',
+            heading: 'campaign.campaign-list.navigation-item',
+            icon: <LayerDiagonal />,
+            path: PATHS_MAIN.campaign.list,
+            children: [
+                {
+                    key: 'navigationItem__campaigns__new',
+                    heading: 'campaign.campaign-create.navigation-item',
+                    icon: <LayerDiagonalAdd />,
+                    path: PATHS_MAIN.campaign.new,
+                }
+            ]
+        },
     ],
     footerItem: {
         key: 'navigationItem__settings',
-        headline: 'Settings',
-        icon: <SettingIcon />,
-        path: PATHS_MAIN.settings
+        heading: 'settings.navigation-item',
+        icon: <Settings />,
+        path: PATHS_MAIN.root
     }
 };

@@ -25,6 +25,7 @@
     
     // TODO: Better configuration
     "paths": {
+      "@negima/react-apis": [ "./src/api-client/index.ts" ],
       "@negima/react-components": [ "./src/common/index.ts" ],
       "@negima/react-contexts": [ "./src/contexts/index.ts" ],
       "@negima/react-configs": [ "./src/lib/configs/index.ts" ],

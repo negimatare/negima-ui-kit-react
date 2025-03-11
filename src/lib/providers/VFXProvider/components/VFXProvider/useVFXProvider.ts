@@ -13,7 +13,7 @@ import { NEGIMA_UI_VARIANT } from './VFXProvider.palettes';
  * Generate theme based on VFX options.
  */
 export const useVFXProvider = () => (options: VFXOptions): Theme => {
-    switch (options.variant) {
+    switch (options.theme) {
         case 'Negima-UI': return options.isLight
             ? createLightTheme(NEGIMA_UI_VARIANT)
             : createDarkTheme(NEGIMA_UI_VARIANT)

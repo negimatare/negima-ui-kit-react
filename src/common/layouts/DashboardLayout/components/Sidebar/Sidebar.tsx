@@ -17,19 +17,21 @@ export const Sidebar: React.FC<SidebarProps> = () => {
 
     const styles = useSidebarStyles({ on: isCondense });
 
+    const { key: footerKey, ...footerItem } = SIDEBAR_SETTINGS.footerItem;
+
     return (
         <div className={styles.root}>
             <div className={styles.body}>
-                {_.map(SIDEBAR_SETTINGS.navigationItems, entry => (
-                    <NavigationItem {...entry} isCondense={isCondense} />
+                {_.map(SIDEBAR_SETTINGS.navigationItems, ({ key, ...shards }) => (
+                    <NavigationItem key={key} {...shards} isCondense={isCondense} />
                 ))}
             </div>
 
             <Divider inset style={{ flexGrow: 'unset' }} />
 
             <div className={styles.footer}>
-                <div className="t-flex-grow">
-                    <NavigationItem {...SIDEBAR_SETTINGS.footerItem} isCondense={isCondense} />
+                <div className="tw:flex-grow">
+                    <NavigationItem key={footerKey} {...footerItem} isCondense={isCondense} />
                 </div>
 
                 <SidebarTrigger on={isCondense} trigger={toggleCondense} />

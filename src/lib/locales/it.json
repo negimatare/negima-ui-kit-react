@@ -1,0 +1,83 @@
+{
+    "oauth2": {
+        "heading": "Accedi con il tuo account Microsoft",
+        "loading-button-label": "Accedi",
+        "loading-progress-label": "Accesso in corso..."
+    },
+    "dialog": {
+        "cancel-button-label": "Annulla"
+    },
+    "loading-screen": {
+        "now-loading-label": "Caricamento in corso..."
+    },
+    "homepage": {
+        "heading": "Ciao,",
+        "caption": "Ecco cosa succede oggi.",
+        "navigation-item": "Dashboard"
+    },
+    "campaign": {
+        "campaign-details": {
+            "heading": "Dettaglio",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "campaign-list": {
+            "heading": "Lista",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "navigation-item": "Lista Campagne",
+            "new-button-label": "+ Nuova Campagna"
+        },
+        "campaign-create": {
+            "heading": "Crea una nuova campagna",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "navigation-item": "Nuova Campagna"
+        },
+        "campaign-update": {
+            "heading": "Modifica",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "campaign-form": {
+            "details-fieldset-heading": "Dettagli",
+            "details-fieldset-caption": "Titolo, descrizione breve, immagine...",
+            "title-label": "Titolo Campagna",
+            "title-placeholder": "Es: Lorem ipsum dolor sit amet...",
+            "title-required": "Il titolo è obbligatorio!",
+            "sub-description-label": "Descrizione",
+            "sub-description-placeholder": "Es: Lorem ipsum dolor sit amet...",
+            "properties-fieldset-heading": "Proprietà",
+            "properties-fieldset-caption": "Funzionalità e attributi aggiuntivi...",
+            "type-label": "Tipologia di Campagna",
+            "resource-url-label": "Url Risorsa",
+            "resource-url-placeholder": "https://contoso.com/xyz",
+            "resource-url-required": "L'url è obbligatorio!",
+            "followup-url-label": "Url di Follow-up",
+            "followup-url-placeholder": "https://contoso.com/xyz",
+            "followup-url-required": "L'url è obbligatorio!",
+            "display-from-label": "Visibile da",
+            "display-from-placeholder": "DD MMM YYYY",
+            "display-from-required": "La data di visibilità è obbligatoria!",
+            "display-to-label": "Visibile a",
+            "display-to-placeholder": "DD MMM YYYY",
+            "display-to-required": "La data di visibilità è obbligatoria!",
+            "daily-engagement-label": "Interazioni Giornaliere",
+            "daily-engagement-required": "Il numero di interazioni è obbligatorio!",
+            "create-button-label": "Crea Campagna",
+            "preview-button-label": "Anteprima",
+            "update-button-label": "Salva Modifiche"
+        },
+        "campaign-grid": {
+            "empty-content-heading": "Nessuna campagna al momento disponibile"
+        },
+        "campaign-preview": {
+            "heading": "Anteprima",
+            "empty-content-heading": "L'anteprima non è disponibile",
+            "empty-content-caption": "Non hai compilato tutti i campi obbligatori per visualizzare l'anteprima.",
+            "cancel-button-label": "Annulla"
+        },
+        "campaign-view": {
+            "back-button-label": "Indietro"
+        }
+    },
+    "settings": {
+        "navigation-item": "Impostazioni"
+    }
+}

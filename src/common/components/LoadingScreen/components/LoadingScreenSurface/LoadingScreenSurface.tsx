@@ -17,12 +17,12 @@ export const LoadingScreenSurface: ForwardRefComponent<LoadingScreenSurfaceProps
     const { t: transl } = useTranslation();
 
     return (
-        <div ref={ref} className={`${styles.root} t-backdrop-blur`}>
+        <div ref={ref} className={`${styles.root} tw:backdrop-blur`}>
             <div className={styles.backdrop} />
 
             <ProgressBar thickness="large" className={styles.progressBar} />
 
-            <div className={`${styles.logo} t-animate-bounce`}>
+            <div className={`${styles.logo} tw:animate-bounce`}>
                 <Logo width={28} />
 
                 <Subtitle2>{transl('loading-screen.now-loading-label')}</Subtitle2>

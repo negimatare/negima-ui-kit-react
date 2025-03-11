@@ -10,7 +10,7 @@ import type { LogoProps } from './Logo.types';
 export const Logo: React.FC<LogoProps> = ({
     asLink = false,
     asType = 'default',
-    ...remains
+    ...shards
 }) => {
     const __assetName = React.useMemo(() => {
         switch (asType) {
@@ -19,7 +19,7 @@ export const Logo: React.FC<LogoProps> = ({
         }
     }, [asType]);
 
-    const __asset = <img alt={APP_NAME} src={`/variant/${VFX_SETTINGS.VARIANT}/${__assetName}`} {...remains} />;
+    const __asset = <img alt={APP_NAME} src={`/themes/${VFX_SETTINGS.THEME}/${__assetName}`} {...shards} />;
 
     if (asLink) return <Link to={PATHS_MAIN.root}>{__asset}</Link>;
 

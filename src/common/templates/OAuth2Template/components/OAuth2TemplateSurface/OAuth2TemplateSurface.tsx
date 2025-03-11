@@ -18,11 +18,11 @@ export const OAuth2TemplateSurface: React.FC<OAuth2TemplateSurfaceProps> = () =>
                 autoPlay
                 loop
                 muted
-                poster={`/variant/${VFX_SETTINGS.VARIANT}/background.webp`}
+                poster={`/themes/${VFX_SETTINGS.THEME}/background.webp`}
                 preload="none"
-                className={`${styles.video} t-object-cover`}
+                className={`${styles.video} tw:object-cover`}
             >
-                <source src={`/variant/${VFX_SETTINGS.VARIANT}/background.mp4`} type="video/mp4" />
+                <source src={`/themes/${VFX_SETTINGS.THEME}/background.mp4`} type="video/mp4" />
             </video>
         </div>
     );

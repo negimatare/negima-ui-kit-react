@@ -18,7 +18,7 @@ export const MsalOAuth2: React.FC = () => {
     const { t: transl } = useTranslation();
 
     return (
-        <div className="t-flex t-flex-col t-gap-6 t-items-center">
+        <div className="tw:flex tw:flex-col tw:gap-6 tw:items-center">
             <Title3>{transl('oauth2.heading')}</Title3>
 
             {!inProgress

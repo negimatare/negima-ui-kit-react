@@ -24,8 +24,8 @@ export const OAuth2Template: ForwardRefComponent<OAuth2TemplateProps> = React.fo
                 <title>{`${title} | ${APP_NAME}`}</title>
             </Helmet>
 
-            <div className={`${styles.root} t-grid t-grid-cols-3`}>
-                <div className="lg:t-col-span-2">
+            <div className={`${styles.root} tw:grid tw:grid-cols-3`}>
+                <div className="tw:lg:col-span-2">
                     <OAuth2TemplateSurface />
                 </div>
                 <div ref={ref} className={styles.children}>
@@ -33,7 +33,7 @@ export const OAuth2Template: ForwardRefComponent<OAuth2TemplateProps> = React.fo
 
                     {children}
 
-                    <div className="t-flex t-justify-end t-w-full">
+                    <div className="tw:flex tw:justify-end tw:w-full">
                         <Caption2>{`Version ${PKG_VERSION}`}</Caption2>
                     </div>
                 </div>

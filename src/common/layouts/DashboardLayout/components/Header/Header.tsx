@@ -14,7 +14,7 @@ export const Header: React.FC = () => {
         <div className={styles.root}>
             <Logo asLink asType="full" width={128} />
 
-            <div className="t-flex-grow" />
+            <div className="tw:flex-grow" />
 
             <div className={styles.actionBar}>
                 <LocalePopover />

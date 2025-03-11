@@ -1,20 +1,22 @@
 import * as React from 'react';
-import { Outlet } from 'react-router-dom';
 
+import type { DashboardLayoutProps } from './DashboardLayout.types';
 import { Header } from '../Header/Header';
 import { Sidebar } from '../Sidebar/Sidebar';
 
 /**
  * DashboardLayout component.
  */
-export const DashboardLayout: React.FC = () => (
-    <div className="t-flex t-flex-col t-h-screen t-overflow-hidden">
+export const DashboardLayout: React.FC<DashboardLayoutProps> = ({
+    children
+}) => (
+    <div className="tw:flex tw:flex-col tw:h-screen tw:overflow-hidden">
         <Header />
 
-        <div className="t-flex t-flex-row t-h-full t-overflow-hidden">
+        <div className="tw:flex tw:flex-row tw:h-full tw:overflow-hidden">
             <Sidebar />
 
-            <Outlet />
+            {children}
         </div>
     </div>
 );

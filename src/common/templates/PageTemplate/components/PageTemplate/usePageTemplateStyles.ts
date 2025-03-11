@@ -9,18 +9,20 @@ const componentClassNames = {
 
 const useRootStyles = makeStyles({
     root: {
+        ...shorthands.padding('12px', '24px'),
         backgroundColor: tokens.colorNeutralBackground1,
         display: 'flex',
         flexDirection: 'column',
-        flexGrow: 1
+        flexGrow: 1,
+        gap: '12px',
     }
 });
 
 const useBodyStyles = makeStyles({
     root: {
-        ...shorthands.padding('12px', '24px', '24px'),
         flexGrow: 1,
-        overflowY: 'auto'
+        overflowY: 'auto',
+        paddingTop: '12px'
     }
 });
 

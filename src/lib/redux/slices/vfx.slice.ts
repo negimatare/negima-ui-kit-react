@@ -1,6 +1,6 @@
 import type { PayloadAction } from '@reduxjs/toolkit';
 import { createSlice } from '@reduxjs/toolkit';
-import type { VFXDirection, VFXMode, VFXVariant } from '@negima/react-providers';
+import type { VFXDirection, VFXMode, VFXTheme } from '@negima/react-providers';
 import { VFX_SETTINGS } from '@negima/react-configs';
 
 /**
@@ -9,21 +9,21 @@ import { VFX_SETTINGS } from '@negima/react-configs';
 type VFXSliceState = {
     direction: VFXDirection;
     mode: VFXMode;
-    variant: VFXVariant;
+    theme: VFXTheme;
 };
 
 const initialState: VFXSliceState = {
     direction: 'ltr',
     mode: 'light',
-    variant: VFX_SETTINGS.VARIANT
+    theme: VFX_SETTINGS.THEME
 };
 
 export const vfxSlice = createSlice({
     name: 'vfx',
     initialState,
     reducers: {
-        changeVariant: (state, action: PayloadAction<VFXVariant>) => {
-            state.variant = action.payload;
+        changeTheme: (state, action: PayloadAction<VFXTheme>) => {
+            state.theme = action.payload;
         },
         toggleDirection: (state) => {
             state.direction = state.direction === 'ltr' ? 'rtl' : 'ltr';
@@ -35,7 +35,7 @@ export const vfxSlice = createSlice({
 });
 
 export const {
-    changeVariant,
+    changeTheme,
     toggleDirection,
     toggleMode
 } = vfxSlice.actions;

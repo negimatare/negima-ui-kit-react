@@ -16,7 +16,7 @@ export const VFXProvider: React.FC<VFXProviderProps> = ({
         direction,
         isLightMode,
         mode,
-        variant
+        theme
     } = useVFX();
 
     const createTheme = useVFXProvider();
@@ -24,15 +24,15 @@ export const VFXProvider: React.FC<VFXProviderProps> = ({
     const __vfxOptions = React.useMemo<VFXOptions>(
         () => ({
             isLight: isLightMode,
-            variant
+            theme
         }),
-        [mode, variant]
+        [mode, theme]
     );
 
-    const theme = createTheme(__vfxOptions);
+    const __theme = createTheme(__vfxOptions);
 
     return (
-        <FluentProvider dir={direction} theme={theme}>
+        <FluentProvider dir={direction} theme={__theme}>
             {children}
         </FluentProvider>
     );

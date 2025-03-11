@@ -4,11 +4,11 @@ export type VFXDirection = 'ltr' | 'rtl';
 
 export type VFXMode = 'light' | 'dark';
 
-export type VFXVariant = 'Negima-UI';
+export type VFXTheme = 'Negima-UI';
 
 export type VFXOptions = {
     isLight: boolean;
-    variant: VFXVariant;
+    theme: VFXTheme;
 };
 
 /**

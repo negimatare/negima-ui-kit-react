@@ -1,9 +1,9 @@
-import type { VFXDirection, VFXMode, VFXVariant } from '@negima/react-providers';
+import type { VFXDirection, VFXMode, VFXTheme } from '@negima/react-providers';
 import type { RootState } from '@negima/react-redux';
 import {
     useDispatch,
     useSelector,
-    changeVariant,
+    changeTheme,
     toggleDirection,
     toggleMode
 } from '@negima/react-redux';
@@ -21,7 +21,7 @@ export const useVFX = () => {
         toggleDirection: () => { dispatch(toggleDirection()); },
         mode: useSelector((state: RootState) => state.vfx.mode) as VFXMode,
         toggleMode: () => { dispatch(toggleMode()); },
-        variant: useSelector((state: RootState) => state.vfx.variant) as VFXVariant,
-        changeVariant: (value: VFXVariant) => { dispatch(changeVariant(value)); }
+        theme: useSelector((state: RootState) => state.vfx.theme) as VFXTheme,
+        changeTheme: (value: VFXTheme) => { dispatch(changeTheme(value)); }
     };
 };

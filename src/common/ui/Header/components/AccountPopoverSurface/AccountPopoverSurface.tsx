@@ -26,7 +26,7 @@ export const AccountPopoverSurface: React.FC = () => {
             <div className={styles.body}>
                 <Avatar image={{ src: account?.photo }} size={96} />
 
-                <div className="t-flex t-flex-col t-gap-2">
+                <div className="tw:flex tw:flex-col tw:gap-2">
                     <Subtitle2Stronger>{account?.displayName}</Subtitle2Stronger>
                     <Caption1>{account?.jobTitle}</Caption1>
                     <Caption1>{account?.mail}</Caption1>

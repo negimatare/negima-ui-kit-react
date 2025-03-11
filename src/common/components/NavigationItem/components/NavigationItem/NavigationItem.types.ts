@@ -2,7 +2,7 @@
  * NavigationItem Type
  */
 export type NavigationItemType = {
-    headline: string;
+    heading: string;
     icon: JSX.Element;
     isCondense?: boolean | undefined;
     path: string;

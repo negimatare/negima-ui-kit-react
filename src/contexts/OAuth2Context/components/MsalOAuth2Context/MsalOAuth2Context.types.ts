@@ -17,7 +17,7 @@ export type MsalOAuth2Actions = ActionMap<MsalOAuth2Payload>[keyof ActionMap<Msa
 
 export type MsalOAuth2ContextValue = OAuth2ContextValue & {
     method: 'msal-react';
-    acquireToken: (scopes: string[]) => Promise<AuthenticationResult>;
+    acquireToken: (scopes?: string[]) => Promise<AuthenticationResult>;
     signIn: VoidFunction;
     signOut: VoidFunction;
 };

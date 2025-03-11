@@ -9,6 +9,12 @@ export const PATHS_AUTH = {
 // **  MAIN PATHS
 export const PATHS_MAIN = {
     root: ROOT_MAIN,
-    konamiCode: `${ROOT_MAIN}/konami-code`,
+    campaign: {
+        root: `${ROOT_MAIN}/campaigns`,
+        list: `${ROOT_MAIN}/campaigns/list`,
+        view: (id: string) => `${ROOT_MAIN}/campaigns/${id}`,
+        edit: (id: string) => `${ROOT_MAIN}/campaigns/${id}/edit`,
+        new: `${ROOT_MAIN}/campaigns/new`,
+    },
     settings: `${ROOT_MAIN}/settings`
 };

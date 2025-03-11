@@ -4,7 +4,80 @@
         "loading-button-label": "Sign-in",
         "loading-progress-label": "Sign-in in progress..."
     },
+    "dialog": {
+        "cancel-button-label": "Cancel"
+    },
     "loading-screen": {
         "now-loading-label": "Now Loading..."
+    },
+    "homepage": {
+        "heading": "Hello,",
+        "caption": "Here's what's going on today.",
+        "navigation-item": "Dashboard"
+    },
+    "campaign": {
+        "campaign-details": {
+            "heading": "Details",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "campaign-list": {
+            "heading": "List",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "navigation-item": "List Campaigns",
+            "new-button-label": "+ New Campaign"
+        },
+        "campaign-create": {
+            "heading": "Create a new campaign",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+            "navigation-item": "New Campaign"
+        },
+        "campaign-update": {
+            "heading": "Edit",
+            "caption": "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+        },
+        "campaign-form": {
+            "details-fieldset-heading": "Details",
+            "details-fieldset-caption": "Title, short description, image...",
+            "title-label": "Campaign title",
+            "title-placeholder": "Ex: Lorem ipsum dolor sit amet...",
+            "title-required": "The title is required!",
+            "sub-description-label": "Sub description",
+            "sub-description-placeholder": "Ex: Lorem ipsum dolor sit amet...",
+            "properties-fieldset-heading": "Properties",
+            "properties-fieldset-caption": "Additional functions and attributes...",
+            "type-label": "Campaign type",
+            "resource-url-label": "Resource url",
+            "resource-url-placeholder": "https://contoso.com/xyz",
+            "resource-url-required": "The url is required!",
+            "followup-url-label": "Follow-up url",
+            "followup-url-placeholder": "https://contoso.com/xyz",
+            "followup-url-required": "The url is required!",
+            "display-from-label": "Display from",
+            "display-from-placeholder": "DD MMM YYYY",
+            "display-from-required": "The display date is required!",
+            "display-to-label": "Display to",
+            "display-to-placeholder": "DD MMM YYYY",
+            "display-to-required": "The display date is required!",
+            "daily-engagement-label": "Daily Engagement",
+            "daily-engagement-required": "The daily engagement is required!",
+            "create-button-label": "Create Campaign",
+            "preview-button-label": "Preview",
+            "update-button-label": "Save Changes"
+        },
+        "campaign-grid": {
+            "empty-content-heading": "No campaigns available at the moment"
+        },
+        "campaign-preview": {
+            "heading": "Preview",
+            "empty-content-heading": "The preview is unavailable",
+            "empty-content-caption": "You have not entered all the required fields to display the preview.",
+            "cancel-button-label": "Cancel"
+        },
+        "campaign-view": {
+            "back-button-label": "Back"
+        }
+    },
+    "settings": {
+        "navigation-item": "Settings"
     }
 }

@@ -1,14 +1,16 @@
 import { fileURLToPath } from 'url';
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
+import tailwindcss from '@tailwindcss/vite';
 
 const urlResolver = (url: string | URL) => fileURLToPath(new URL(url, import.meta.url));
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: [
+      { find: '@negima/react-apis', replacement: urlResolver('./src/api-client/index.ts') },
       { find: '@negima/react-components', replacement: urlResolver('./src/common/index.ts') },
       { find: '@negima/react-contexts', replacement: urlResolver('./src/contexts/index.ts') },
       { find: '@negima/react-configs', replacement: urlResolver('./src/lib/configs/index.ts') },

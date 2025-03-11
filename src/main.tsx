@@ -5,9 +5,10 @@ import { Provider as ReduxProvider } from 'react-redux';
 import { PersistGate } from 'redux-persist/lib/integration/react';
 import { OAuth2Provider } from '@negima/react-contexts';
 import { reduxPersistor, reduxStore } from '@negima/react-redux';
+import { LoadingScreen } from '@negima/react-components';
 
 import './lib/locales/i18n.config';
-import './main.css';
+import './index.css';
 
 import App from './App.tsx'
 
@@ -17,7 +18,9 @@ ReactDOM.createRoot(document.getElementById('root')!).render(
 			<HelmetProvider>
 				<ReduxProvider store={reduxStore}>
 					<PersistGate loading={null} persistor={reduxPersistor}>
-						<App />
+						<React.Suspense fallback={<LoadingScreen />}>
+							<App />
+						</React.Suspense>
 					</PersistGate>
 				</ReduxProvider>
 			</HelmetProvider>

@@ -1,12 +1,10 @@
 import { ReactNode } from 'react';
+import type { BreadcrumbProps, HeaderProps } from '@negima/react-components';
 
 /**
  * PageTemplate Props
  */
-export type PageTemplateProps = {
-    headline: string;
-    icon?: JSX.Element | undefined;
-    caption?: string | undefined;
+export type PageTemplateProps = Partial<BreadcrumbProps> & HeaderProps & {
     children: ReactNode;
 };
 

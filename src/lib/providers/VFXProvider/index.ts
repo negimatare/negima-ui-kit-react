@@ -4,5 +4,5 @@ export type {
     VFXMode,
     VFXOptions,
     VFXProviderProps,
-    VFXVariant
+    VFXTheme
 } from './VFXProvider';

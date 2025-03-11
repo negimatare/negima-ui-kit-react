@@ -6,7 +6,7 @@ export const PKG_VERSION = import.meta.env.VITE_PKG_VERSION;
 export const VFX_SETTINGS = {
     // Generate palette from the following link: https://mycolor.space/
     BACKDROP_FILTER: 'linear-gradient(to right top, #2F1E4F, #783063, #BA4D65, #E97B5D, #FFB758, #F9F871)',
-    VARIANT: import.meta.env.VITE_VFX_VARIANT
+    THEME: import.meta.env.VITE_VFX_THEME
 };
 
 // ** MSAL OAUTH2
@@ -24,5 +24,7 @@ export const MSAL_SETTINGS = {
 
 // ** WEB API
 export const WEB_API_SETTINGS = {
-    WEB_API_URL: import.meta.env.VITE_WEB_API_URL
+    WEB_API_URL: import.meta.env.VITE_WEB_API_URL,
+    ACCEPT_LANGUAGE: 'ja, en;q=0.9',
+    CONTENT_LANGUAGE: 'ja'
 };
